@@ -3,10 +3,8 @@ package com.eslam.shoopinglisttesting.di
 import android.content.Context
 import androidx.room.Room
 import com.bumptech.glide.Glide
-import com.bumptech.glide.RequestManager
 import com.bumptech.glide.request.RequestOptions
 import com.eslam.shoopinglisttesting.R
-import com.eslam.shoopinglisttesting.adapters.ShoppingItemAdapter
 import com.eslam.shoopinglisttesting.data.local.ShoppingDao
 import com.eslam.shoopinglisttesting.data.local.ShoppingItemDatabase
 import com.eslam.shoopinglisttesting.data.remote.PixabayAPI
@@ -21,7 +19,6 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import javax.inject.Named
 import javax.inject.Singleton
 
 @Module

@@ -20,7 +20,7 @@ android {
 
         buildConfigField("String", "API_KEY", API_KEY)
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "com.eslam.shoopinglisttesting.HiltTestRunner"
         compileSdkPreview = "UpsideDownCake"
     }
 
@@ -61,6 +61,7 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.1"
     implementation "androidx.lifecycle:lifecycle-runtime:2.6.1"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.1"
+    implementation 'androidx.core:core-ktx:+'
     implementation 'androidx.core:core-ktx:+'
 
     // room db
@@ -110,6 +111,8 @@ dependencies {
     testImplementation "com.google.truth:truth:1.1.3"
     testImplementation "org.mockito:mockito-core:5.1.1"
     testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4'
+    testImplementation 'com.google.dagger:hilt-android-testing:2.44'
+    kaptTest 'com.google.dagger:hilt-android-compiler:2.44'
 
     // Instrumented Unit Tests
     androidTestImplementation "junit:junit:4.13.2"
@@ -120,7 +123,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     androidTestImplementation "org.mockito:mockito-core:5.1.1"
-    androidTestImplementation 'com.google.dagger:hilt-android-testing:2.28-alpha'
+    androidTestImplementation 'com.google.dagger:hilt-android-testing:2.44'
     kaptAndroidTest 'com.google.dagger:hilt-android-compiler:2.44'
     debugImplementation "androidx.fragment:fragment-testing:1.6.0-beta01"
     androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.5.1'
