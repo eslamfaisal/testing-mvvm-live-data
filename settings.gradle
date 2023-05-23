@@ -1,2 +1,2 @@
-rootProject.name = "ShoopingListTesting"
+rootProject.name = "MVVM-Live-Data-Testing"
 include ':app'
